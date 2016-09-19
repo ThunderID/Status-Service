@@ -1,6 +1,6 @@
 FORMAT: 1A
 
-# STATUS_SERVICE
+# STATUS-SERVICE
 
 # Statuses [/status]
 Status resource representation.
@@ -39,8 +39,7 @@ Status resource representation.
                         "ref_id": "string",
                         "next_id": "string",
                         "status": "string",
-                        "0": "position",
-                        "1": "string"
+                        "position": "string"
                     },
                     "count": "integer"
                 }
@@ -57,8 +56,7 @@ Status resource representation.
                 "ref_id": "string",
                 "next_id": "string",
                 "status": "string",
-                "0": "position",
-                "1": "string"
+                "position": "string"
             }
 
 + Response 200 (application/json)
@@ -71,8 +69,7 @@ Status resource representation.
                     "ref_id": "string",
                     "next_id": "string",
                     "status": "string",
-                    "0": "position",
-                    "1": "string"
+                    "position": "string"
                 }
             }
 
@@ -107,8 +104,7 @@ Status resource representation.
                     "ref_id": "string",
                     "next_id": "string",
                     "status": "string",
-                    "0": "position",
-                    "1": "string"
+                    "position": "string"
                 }
             }
 

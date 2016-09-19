@@ -29,7 +29,7 @@ class StatusController extends Controller
 	 * @Versions({"v1"})
 	 * @Transaction({
 	 *      @Request({"search":{"id":"string","reference":"string","tail":"boolean","head":"boolean","status":"string"},"sort":{"newest":"asc|desc","position":"desc|asc","reference":"desc|asc"}, "take":"integer", "skip":"integer"}),
-	 *      @Response(200, body={"status":"success","data":{"data":{"id":"string","ref_id":"string","next_id":"string","status":"string","position","string"},"count":"integer"} })
+	 *      @Response(200, body={"status":"success","data":{"data":{"id":"string","ref_id":"string","next_id":"string","status":"string","position":"string"},"count":"integer"} })
 	 * })
 	 */
 	public function index()
@@ -124,8 +124,8 @@ class StatusController extends Controller
 	 * @Post("/")
 	 * @Versions({"v1"})
 	 * @Transaction({
-	 *      @Request({"id":"string","ref_id":"string","next_id":"string","status":"string","position","string"}),
-	 *      @Response(200, body={"status": "success", "data":{"id":"string","ref_id":"string","next_id":"string","status":"string","position","string"}}),
+	 *      @Request({"id":"string","ref_id":"string","next_id":"string","status":"string","position":"string"}),
+	 *      @Response(200, body={"status": "success", "data":{"id":"string","ref_id":"string","next_id":"string","status":"string","position":"string"}}),
 	 *      @Response(200, body={"status": {"error": {"code must be unique."}}})
 	 * })
 	 */
@@ -160,7 +160,7 @@ class StatusController extends Controller
 	 * @Versions({"v1"})
 	 * @Transaction({
 	 *      @Request({"id":null}),
-	 *      @Response(200, body={"status": "success", "data": {"id":"string","ref_id":"string","next_id":"string","status":"string","position","string"}}),
+	 *      @Response(200, body={"status": "success", "data": {"id":"string","ref_id":"string","next_id":"string","status":"string","position":"string"}}),
 	 *      @Response(200, body={"status": {"error": {"code must be unique."}}})
 	 * })
 	 */
